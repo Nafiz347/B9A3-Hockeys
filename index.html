@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!------google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--Tailwind style cases-->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'button-primary': '#FF4240',
+                        'primary': '#131318',
+
+
+                    }
+                }
+            }
+        }
+    </script>
+
+
+
+    <style>
+        .font-family {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body class=".font-family">
+    <header class="container mx-auto mt-14">
+        <div class="navbar bg-base-100 flex items-center">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a class="text-button-primary">Home</a></li>
+                        <li><a class="text-primary">About</a></li>
+                        <li><a class="text-primary">Pages</a></li>
+                        <li><a class="text-primary">Blog</a></li>
+                        <li><a class="text-primary">Contact</a></li>
+                    </ul>
+                </div>
+                <a class="text-2xl lg:text-4xl font-extrabold">Hockey<span
+                        class="text-[#FF4240] font-medium">'</span>s</a>
+            </div>
+            <div class="navbar-center hidden lg:flex items-center-center lg:gap-x-11">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-button-primary">Home</a></li>
+                    <li><a class="text-primary">About</a></li>
+                    <li><a class="text-primary">Pages</a></li>
+                    <li><a class="text-primary">Blog</a></li>
+                    <li><a class="text-primary">Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end ">
+                <i class="fa-solid fa-magnifying-glass opacity-0 lg:opacity-55 mr-4"></i>
+                <a class="btn bg-button-primary text-white text-xs p-auto font-bold lg:text-xl">Get Ticket</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto">
+
+        <!------Banner section-->
+        <section class="my-10 lg:w-full w-80 mx-auto ">
+            <div class="carousel  ">
+                <div id="slide1" class=" carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full rounded-2xl mx-auto" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle border-none  bg-black text-white">❮</a>
+                        <a href="#slide2" class="btn btn-circle  border-none  bg-black text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle border-none  bg-black text-white">❮</a>
+                        <a href="#slide3" class="btn btn-circle  border-none  bg-black text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle border-none  bg-black text-white">❮</a>
+                        <a href="#slide1" class="btn btn-circle border-none  bg-black text-white">❯</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-----Professionals Hockey Club-->
+        <section class="my-24">
+            <h2 class="text-2xl lg:text-4xl font-extrabold text-center">Professional Hockeys Club</h2>
+            <p class="text-center text-primary font-medium text-xl mt-6 opacity-90">The roots of hockey are buried deep
+                in
+                antiquity. <br> Historical records show that a crude formof the game
+                was played in Egypt 4,000 years ago and in<br> Ethiopia around 1,000BC, whilst an ancient form of the
+                game
+                was also played in Iran in around 2,000BC.
+            </p>
+
+            <div class="my-24 grid grid-cols-1 lg:grid-cols-4 lg:gap-4">
+
+                <div class="space-y-4">
+                    <div class="flex justify-center">
+                        <div class=" radial-progress text-red-600 " style="--value:87;" role="progressbar">
+                            87%</div>
+                    </div>
+                    <h4 class="text-primary font-semibold text-xl text-center ">Prayer Facility</h4>
+                    <p class="text-center font opacity-90 font-normal text-xl">The following facility pages will<br>
+                        provide pitch users
+                        and asset<br> holders information.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex justify-center">
+                        <div class=" radial-progress text-[#49d293] " style="--value:95;" role="progressbar">
+                            95%</div>
+                    </div>
+                    <h4 class="text-primary font-semibold text-xl text-center ">Experienced Coach</h4>
+                    <p class="text-center font opacity-90 font-normal text-xl">The following facility pages will<br>
+                        provide pitch users
+                        and asset<br> holders information.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex justify-center">
+                        <div class=" radial-progress text-[#ffb546] " style="--value:90;" role="progressbar">
+                            90%</div>
+                    </div>
+                    <h4 class="text-primary font-semibold text-xl text-center ">Senior Player</h4>
+                    <p class="text-center font opacity-90 font-normal text-xl">The following facility pages will<br>
+                        provide pitch users
+                        and asset<br> holders information.
+                    </p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex justify-center">
+                        <div class=" radial-progress text-[#4c8df1] " style="--value:80;" role="progressbar">
+                            80%</div>
+                    </div>
+                    <h4 class="text-primary font-semibold text-xl text-center ">Training Ground</h4>
+                    <p class="text-center font opacity-90 font-normal text-xl">The following facility pages will<br>
+                        provide pitch users
+                        and asset<br> holders information.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-----Program Section-->
+        <section class="my-24">
+            <h2 class="text-2xl lg:text-4xl font-extrabold text-center">Program Sections</h2>
+            <p class="text-center text-primary font-medium text-xl mt-6 opacity-90">The Program Services department
+                provides resources for both<br> growing your membership at the youngest levels as well as foundational<br>
+                guidelines for leading your local youth hockey association with intent.
+            </p>
+        </section>
+
+
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>
